@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E9DDD2">
+    <title>IntelliMatch</title>
+    <link rel="stylesheet" href="/static/style.css?v=2">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">IM<span>2.0</span></div>
+
+        <p class="nav-label">WORKSPACE</p>
+
+        <button class="nav-item active" data-page="dashboard" type="button">
+            ▦ Dashboard
+        </button>
+
+        <button class="nav-item" data-page="students" type="button">
+            ♙ Students
+        </button>
+
+        <button class="nav-item" data-page="projects" type="button">
+            ▤ Projects
+        </button>
+
+        <button class="nav-item" data-page="profile" type="button">
+            ◎ My Profile
+        </button>
+
+        <button class="nav-item" data-page="discover" type="button">
+            ⌕ Discover Projects
+        </button>
+
+        <button class="nav-item" data-page="my-projects" type="button">
+    My Projects
+</button>
+
+        <button class="nav-item" data-page="applications" type="button">
+            ▤ My Applications
+        </button>
+
+        <button class="nav-item" data-page="review" type="button">
+            ♧ Review Applications
+        </button>
+
+        <div class="sidebar-bottom">
+            <div id="auth-status">Not logged in</div>
+            <button id="logout-button" class="secondary-button" hidden type="button">
+                Log out
+            </button>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">STUDENT COLLABORATION PLATFORM</p>
+                <h1 id="page-title"></h1>
+            </div>
+
+            <div class="status">
+                <span></span>
+                PostgreSQL connected
+            </div>
+        </header>
+
+        <section id="content">
+            <section class="panel">
+                <h2>Loading IntelliMatch...</h2>
+                <p>Please wait while the application loads.</p>
+            </section>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
